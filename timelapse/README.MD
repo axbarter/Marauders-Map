@@ -1,7 +1,7 @@
 #Motion Time-lapse camera
 
 
-![Example](timelapse/photo.jpg)
+![Example](photo.jpg)
 
 
 - motion_control.ino - Arduino Uno motion control code
