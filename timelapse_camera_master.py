@@ -64,17 +64,17 @@ with PiCamera() as camera:
 	file_count = len(files)
 	print (file_count)
 	frame = 1 + file_count
-    while True:
+    	while True:
 		button.wait_for_press()
-        yellow.source = button.values
-        draw.rectangle((0,0,LCD.LCDWIDTH,LCD.LCDHEIGHT), outline=255, fill=255)
-        disp.display()
+        	yellow.source = button.values
+        	draw.rectangle((0,0,LCD.LCDWIDTH,LCD.LCDHEIGHT), outline=255, fill=255)
+        	disp.display()
 		draw.text((3,0),'Taking ....', font=font)
 		disp.image(image)
-        disp.display()
+        	disp.display()
 		print ("About to capture photo")
-        camera.capture('/home/pi/photo_output/frame%03d.jpg' % frame)
-        print (frame)
+        	camera.capture('/home/pi/photo_output/frame%03d.jpg' % frame)
+		print (frame)
 		draw.text((3,10),'Frames taken:', font=font)
 		draw.text((10,20), str(frame), font=font)
 		disp.image(image)
