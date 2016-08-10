@@ -13,10 +13,10 @@ with PiCamera() as camera:
 	file_count = len(files)
 	print (file_count)
 	frame = 1 + file_count
-    while True:
+    	while True:
 		button.wait_for_press()
-        yellow.source = button.values
+        	yellow.source = button.values
 		print ("About to capture photo")
-        camera.capture('/home/pi/photo_output/frame%03d.jpg' % frame)
-        print (frame)
+        	camera.capture('/home/pi/photo_output/frame%03d.jpg' % frame)
+        	print (frame)
 		frame +=1
