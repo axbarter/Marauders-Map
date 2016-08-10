@@ -1,5 +1,9 @@
 #Motion Time-lapse camera
 
+
+![Example](timelapse/photo.jpg)
+
+
 - motion_control.ino - Arduino Uno motion control code
 
 - timelapse_camera_display.py - Use this if you are using the Nokia 5110 display
